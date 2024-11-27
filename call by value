@@ -1,0 +1,10 @@
+void addTen(int num) {
+    num = num + 10;  // Changes only the local copy
+}
+
+int main() {
+    int x = 5;
+    addTen(x);  // x remains 5 after the function call
+    printf("%d", x);  // Output: 5
+    return 0;
+}
